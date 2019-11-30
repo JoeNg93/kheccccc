@@ -6,5 +6,10 @@ steps:
   - name: greeting
     image: node
     commands:
-      - echo "Hello World"
-      - echo "Yas"
+      - echo "Greeting"
+      - npm i -g typescript
+      - tsc --version
+  - name: morning
+    image: node
+    commands:
+      - tsc --version
